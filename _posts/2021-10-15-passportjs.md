@@ -12,7 +12,7 @@ app.post('/login', passport.authenticate('local', { successRedirect: '/',
 ```
 
 그래서 로그인의 경우가 딱들어맞는 경우입니다.
-`로그인을 했는지 안했는지`를 확인하려고 다음과 같은 코드를 사용한다면 항상 failureRedirect가 실행이 될 것입니다.
+`로그인을 했는지 안했는지`를 확인하려고 아래과 같은 코드를 사용한다면 항상 failureRedirect가 실행이 될 것입니다.
 
 ```
 app.get('/member-only', passport.authenticate('local', {failureRedirect: '/login'}), (req,res) => {
