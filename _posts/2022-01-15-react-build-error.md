@@ -1,6 +1,6 @@
 ---
 title: "react build 에러"
-date: 2021-10-23 12:00
+date: 2022-01-15 12:00
 categories: react
 ---
 
